@@ -1,0 +1,71 @@
+#hero-slider{
+    height: 340px;
+    width: 100vw;
+}
+#hero-slider .carousel, .carousel-inner{
+    height: inherit;
+}
+#about-us{
+    max-width: 1250px;
+    margin: auto;
+    padding: 12px;
+}
+#about-us article{
+    display: flex;
+}
+#about-us article:nth-child(2){
+    flex-direction: row-reverse;
+}
+#about-us .img-container{
+    display: flex;
+    width: 40%;
+    height: 325px;
+}
+#about-us .text{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+    padding: 24px;
+}
+#about-us .name{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-end;
+}
+#about-us article:nth-child(2) .name{
+    align-items: flex-start;
+}
+#service .services{
+    display: flex;
+    width: 1250px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+#service .service-item{
+    height: 300px;
+    width: 300px;
+    padding: 12px;
+    background: wheat;
+    margin: 3px;
+    border-radius: 5px;
+}
+@media screen and (max-width: 768px){
+    #about-us article{
+        flex-direction: column;
+    }
+    #about-us article:nth-child(2){
+        flex-direction: column;
+    }
+    #about-us .img-container{
+        width: 100%;
+    }
+    #about-us .text{
+        width: 100%;
+    }
+    #about-us article:nth-child(2) .name {
+        align-items: flex-end;
+    }
+}
